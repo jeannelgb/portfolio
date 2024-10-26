@@ -1,3 +1,16 @@
-p {
-    color: pink;
+.width-image {
+    width: 20em;
+}
+
+.width-logo {
+    width: 180px;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+
+.card {
+    transition: all 1s ease;
 }
