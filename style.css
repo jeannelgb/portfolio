@@ -20,10 +20,30 @@ html {
 }
 
 .skill:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
     transition: all 1s ease;
 }
 
 .skill {
     transition: all 1s ease;
+}
+
+.has-background-photo {
+    position: relative;
+    background-image: none;
+}
+
+.has-background-photo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(IMG_6965.JPG);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.2;
+    z-index: -1;
 }
