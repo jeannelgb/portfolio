@@ -22,8 +22,8 @@
                 <a class="navbar-item has-text-danger-05-invert" href="#experiences">
                     Expériences
                 </a>
-                <a class="navbar-item has-text-danger-05-invert" href="#realisations">
-                    Réalisations
+                <a class="navbar-item has-text-danger-05-invert" href="#competences">
+                    Compétences
                 </a>
                 <a class="navbar-item has-text-danger-05-invert" href="#contact">
                     Contact
@@ -85,7 +85,7 @@
             </div>
         </div>
     </div>
-    <div class="section has-background-danger" id="formation">
+    <div class="section has-background-danger-80" id="formation">
         <h1 class="block is-size-1 has-text-centered has-text-weight-ligh has-text-white">FORMATION</h1>
         <div class="block">
             <div class="columns">
@@ -137,20 +137,78 @@
         </div>
     </div>
     <div class="section" id="experiences">
-        <h1 class="block is-size-1 has-text-centered has-text-weight-light">EXPERIENCES</h1>
+        <h1 class="block is-size-1 has-text-centered has-text-weight-light">EXPÉRIENCES</h1>
     </div>
-    <div class="section has-background-primary" id="realisations">
-        <h1 class="block is-size-1 has-text-centered has-text-weight-light">REALISATIONS</h1>
+    <div class="section has-background-primary-90" id="competences">
+        <h1 class="block is-size-1 has-text-centered has-text-weight-light">COMPÉTENCES</h1>
+        <div class="rows">
+            <div class="columns is-centered skill">
+                <div class="column is-four-fifths">
+                    <div class="columns">
+                        <p class="has-text-left column is-5 is-size-6 has-text-weight-bold">Suite Office <span class="is-size-7 has-text-weight-light">(Excel, Word, PowerPoint)</span></p>
+                        <progress class="progress is-primary is-small is-align-self-center" value=95 max=100></progress>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-centered skill">
+                <div class="column is-four-fifths">
+                    <div class="columns">
+                        <p class="has-text-left column is-5 is-size-6 has-text-weight-bold">Développement Web <span class="is-size-7 has-text-weight-light">(React, HTML, CSS, Javascript, Angular)</span></p>
+                        <progress class="progress is-primary is-small is-align-self-center" value=85 max=100></progress>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-centered skill">
+                <div class="column is-four-fifths">
+                    <div class="columns">
+                        <p class="has-text-left column is-5 is-size-6 has-text-weight-bold">Gestion de projet <span class="is-size-7 has-text-weight-light">(Méthode Agile, Outils de gestion, Planification)</span></p>
+                        <progress class="progress is-primary is-small is-align-self-center" value=70 max=100></progress>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-centered skill">
+                <div class="column is-four-fifths">
+                    <div class="columns">
+                        <p class="has-text-left column is-5 is-size-6 has-text-weight-bold">Entrepreneuriat <span class="is-size-7 has-text-weight-light">(Droit des entreprises, Marketing, Innovation)</span></p>
+                        <progress class="progress is-primary is-small is-align-self-center" value=70 max=100></progress>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-centered skill">
+                <div class="column is-four-fifths">
+                    <div class="columns">
+                        <p class="has-text-left column is-5 is-size-6 has-text-weight-bold">Bases de données <span class="is-size-7 has-text-weight-light">(SQL, MongoDB, S3, H2)</span></p>
+                        <progress class="progress is-primary is-small is-align-self-center" value=65 max=100></progress>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-centered skill">
+                <div class="column is-four-fifths">
+                    <div class="columns">
+                        <p class="has-text-left column is-5 is-size-6 has-text-weight-bold">Suite Adobe <span class="is-size-7 has-text-weight-light">(Photoshop, Illustrator, Premiere Pro, Lightroom)</span></p>
+                        <progress class="progress is-primary is-small is-align-self-center" value=65 max=100></progress>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-centered skill">
+                <div class="column is-four-fifths">
+                    <div class="columns">
+                        <p class="has-text-left column is-5 is-size-6 has-text-weight-bold">Clouds <span class="is-size-7 has-text-weight-light">(AWS, Azure, Google Cloud)</span></p>
+                        <progress class="progress is-primary is-small is-align-self-center" value=55 max=100></progress>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="section" id="contact">
         <h1 class="block is-size-1 has-text-centered has-text-weight-light">CONTACT</h1>
         <div class="columns is-centered">
             <div class="column is-5">
-                <form method="post" action="contact.php">
+                <form action="https://formspree.io/f/xqakqdvy" method="POST">
                     <div class="field">
                         <label class="label">Prénom NOM</label>
                         <div class="control has-icons-left">
-                          <input class="input" type="text" placeholder="Prénom NOM">
+                          <input name="nom"class="input" type="text" placeholder="Prénom NOM" required>
                           <span class="icon is-small is-left">
                             <i class="fas fa-user"></i>
                           </span>
@@ -176,10 +234,7 @@
                       
                       <div class="field is-grouped">
                         <div class="control">
-                          <button class="button is-success is-light">Envoyer</button>
-                        </div>
-                        <div class="control">
-                          <button type="submit" class="button is-danger is-light">Cancel</button>
+                          <button type="submit" class="button is-success is-light">Envoyer</button>
                         </div>
                       </div>
                 </form>   
@@ -187,7 +242,7 @@
             </div>
     </div>
     <footer class="footer has-background-light pb-6">
-        <p>Site développé par <b>Jeanne LE GALL-BOTTE</b> avec <a href="https://bulma.io"><b>Bulma.io</b></a></p>
+        <p>Site développé par <b>Jeanne LE GALL-BOTTE</b> avec <a target="_blank" href="https://bulma.io"><b>Bulma.io</b></a></p>
         <p>et hébergé par <a href="https://github.com" target="_blank"><b>Github</b></a></p>
     </footer>
 </body>

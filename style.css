@@ -14,3 +14,16 @@
 .card {
     transition: all 1s ease;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.skill:hover {
+    transform: scale(1.2);
+    transition: all 1s ease;
+}
+
+.skill {
+    transition: all 1s ease;
+}
